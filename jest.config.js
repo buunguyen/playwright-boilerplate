@@ -1,4 +1,4 @@
 module.exports = {
   preset: "jest-playwright-preset",
-  reporters: [ "default", "jest-junit" ]
-}
+  reporters: ["default", "jest-junit"],
+};

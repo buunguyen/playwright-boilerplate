@@ -2,7 +2,6 @@ const { chromium } = require("playwright");
 
 describe("TodoMVC", () => {
   it("should let users manage to-do list", async () => {
-
     // Open new page
     const page = await context.newPage();
 

@@ -17,5 +17,8 @@
   "directories": {
     "test": "tests"
   },
-  "description": ""
+  "description": "",
+  "jest-junit": {
+    "outputDirectory": "reports"
+  }
 }

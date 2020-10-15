@@ -14,12 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js
+    - name: Set up Node.js
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
     - run: npm install && npm test
-    - name: Katalon Report Uploader
+    - name: Upload reports to Katalon TestOps
       uses: katalon-studio/report-uploader@v0.0.7.11
       env:
         PASSWORD: ${{ secrets.KATALON_API_KEY }}

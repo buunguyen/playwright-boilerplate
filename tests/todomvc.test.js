@@ -18,14 +18,7 @@ describe("TodoMVC", () => {
     // Press Enter
     await page.press('input[placeholder="What needs to be done?"]', "Enter");
 
-    // Fill input[placeholder="What needs to be done?"]
-    await page.fill(
-      'input[placeholder="What needs to be done?"]',
-      "Organize photo shoot"
-    );
-
-    // Press Enter
-    await page.press('input[placeholder="What needs to be done?"]', "Enter");
+    await expect(page).toHaveText("Design a prototype");
 
     // Fill input[placeholder="What needs to be done?"]
     await page.fill(
@@ -36,14 +29,11 @@ describe("TodoMVC", () => {
     // Press Enter
     await page.press('input[placeholder="What needs to be done?"]', "Enter");
 
+    await expect(page).toHaveText("Bring an umbrella");
+
     // Check //div[normalize-space(.)='Design a prototype']/input[normalize-space(@type)='checkbox']
     await page.check(
       "//div[normalize-space(.)='Design a prototype']/input[normalize-space(@type)='checkbox']"
-    );
-
-    // Check //div[normalize-space(.)='Organize photo shoot']/input[normalize-space(@type)='checkbox']
-    await page.check(
-      "//div[normalize-space(.)='Organize photo shoot']/input[normalize-space(@type)='checkbox']"
     );
 
     // Check //div[normalize-space(.)='Bring an umbrella']/input[normalize-space(@type)='checkbox']

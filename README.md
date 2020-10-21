@@ -1,7 +1,5 @@
-# A very simple Playwright demo
+# A practical boilerplate of Playwright with Jest
 
-To run test, use `npm test`.
+Playwright is not new anymore, and there are many Playwright tutorials and boilerplates on the Internet. However, they often lacked practical setup like code generation, debugging, reporting, and IDE configuration. Therefore, I decided to roll my own.
 
-To record and generate scripts, use `npm run codegen -- <url>`.
-
-To debug, use VSCode. The debug configuration can be customized in `jest-playwright-debug.config.js`.
+Documentation: https://medium.com/@dev.alex.88/a-practical-boilerplate-of-playwright-with-jest-aec7cad7ac1d.
